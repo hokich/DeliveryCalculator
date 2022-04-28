@@ -2,8 +2,6 @@ import datetime
 
 import pytest
 
-import configs
-
 
 @pytest.fixture
 def clean_test_file():
@@ -31,4 +29,3 @@ def tariffs_test_data_tuple():
 @pytest.fixture
 def test_order_params():
     return datetime.date(year=2015, month=3, day=14), 'M', 'JonasShipping'
-

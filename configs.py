@@ -1,5 +1,3 @@
-AVAILABLE_SIZES = ['S', 'M', 'L']
-AVAILABLE_PROVIDERS = ['SimoSiuntos', 'JonasShipping']
 MAX_DISCOUNT_PER_MONTH = 10
 TARIFFS_DATA = (
     ('SimoSiuntos', 'S', 1.50),

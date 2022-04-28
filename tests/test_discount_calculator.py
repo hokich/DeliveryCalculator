@@ -13,7 +13,7 @@ def test_getting_tariff_by_provider_and_package_size(tariffs_test_data_tuple):
     tariffs = create_test_tariffs_objects(tariffs_test_data_tuple)
     tariff_obj = models.Tariff.get_tariff_by_provider_and_package_size(
         tariffs, 'SimoSiuntos', 'M')
-    assert isinstance(tariff_obj, models.Tariff) == True and \
+    assert isinstance(tariff_obj, models.Tariff) and \
            tariff_obj.provider == 'SimoSiuntos' and \
            tariff_obj.package_size == 'M' and \
            tariff_obj.price == 4.90
@@ -29,7 +29,7 @@ def test_none_returning_get_tariff_by_provider_and_package_size(tariffs_test_dat
 def test_getting_tariff_with_min_price_by_package_size(tariffs_test_data_tuple):
     tariffs = create_test_tariffs_objects(tariffs_test_data_tuple)
     tariff_obj = models.Tariff.get_tariff_with_min_price_by_package_size(tariffs, 'S')
-    assert isinstance(tariff_obj, models.Tariff) == True and \
+    assert isinstance(tariff_obj, models.Tariff) and \
            tariff_obj.provider == 'SimoSiuntos' and \
            tariff_obj.package_size == 'S' and \
            tariff_obj.price == 1.5

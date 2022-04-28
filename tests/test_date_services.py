@@ -27,5 +27,3 @@ def test_converting_str_to_date(date_str, date_format, expected_result):
 def test_value_error_for_converting_str_to_date():
     with pytest.raises(ValueError):
         services.convert_str_to_date('1997-14-25', date_format='%Y-%m-%d')
-
-

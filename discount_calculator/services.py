@@ -53,4 +53,3 @@ def convert_str_to_date(date_str: str, date_format='%Y-%m-%d') -> datetime.date:
     :return:
     """
     return datetime.datetime.strptime(date_str, date_format).date()
-
