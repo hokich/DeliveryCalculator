@@ -45,3 +45,4 @@ if __name__ == '__main__':
         output_orders_list.append(f'{str(order_obj)}\n')
 
     services.write_text_file('output.txt', output_orders_list)
+    print('Successful. See the output data in the output.txt file.')
